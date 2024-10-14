@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		AAEDB26C2CBDE60500FC19AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAEDB2532CBDE60400FC19AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAEDB25A2CBDE60400FC19AD;
+			remoteInfo = "HP-Trivia";
+		};
+		AAEDB2762CBDE60500FC19AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAEDB2532CBDE60400FC19AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAEDB25A2CBDE60400FC19AD;
+			remoteInfo = "HP-Trivia";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AAEDB25B2CBDE60400FC19AD /* HP-Trivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HP-Trivia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAEDB26B2CBDE60500FC19AD /* HP-TriviaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HP-TriviaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAEDB2752CBDE60500FC19AD /* HP-TriviaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HP-TriviaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AAEDB25D2CBDE60400FC19AD /* HP-Trivia */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "HP-Trivia";
+			sourceTree = "<group>";
+		};
+		AAEDB26E2CBDE60500FC19AD /* HP-TriviaTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "HP-TriviaTests";
+			sourceTree = "<group>";
+		};
+		AAEDB2782CBDE60500FC19AD /* HP-TriviaUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "HP-TriviaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAEDB2582CBDE60400FC19AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEDB2682CBDE60500FC19AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEDB2722CBDE60500FC19AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAEDB2522CBDE60400FC19AD = {
+			isa = PBXGroup;
+			children = (
+				AAEDB25D2CBDE60400FC19AD /* HP-Trivia */,
+				AAEDB26E2CBDE60500FC19AD /* HP-TriviaTests */,
+				AAEDB2782CBDE60500FC19AD /* HP-TriviaUITests */,
+				AAEDB25C2CBDE60400FC19AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAEDB25C2CBDE60400FC19AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAEDB25B2CBDE60400FC19AD /* HP-Trivia.app */,
+				AAEDB26B2CBDE60500FC19AD /* HP-TriviaTests.xctest */,
+				AAEDB2752CBDE60500FC19AD /* HP-TriviaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAEDB25A2CBDE60400FC19AD /* HP-Trivia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAEDB27F2CBDE60600FC19AD /* Build configuration list for PBXNativeTarget "HP-Trivia" */;
+			buildPhases = (
+				AAEDB2572CBDE60400FC19AD /* Sources */,
+				AAEDB2582CBDE60400FC19AD /* Frameworks */,
+				AAEDB2592CBDE60400FC19AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AAEDB25D2CBDE60400FC19AD /* HP-Trivia */,
+			);
+			name = "HP-Trivia";
+			packageProductDependencies = (
+			);
+			productName = "HP-Trivia";
+			productReference = AAEDB25B2CBDE60400FC19AD /* HP-Trivia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAEDB26A2CBDE60500FC19AD /* HP-TriviaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAEDB2822CBDE60600FC19AD /* Build configuration list for PBXNativeTarget "HP-TriviaTests" */;
+			buildPhases = (
+				AAEDB2672CBDE60500FC19AD /* Sources */,
+				AAEDB2682CBDE60500FC19AD /* Frameworks */,
+				AAEDB2692CBDE60500FC19AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAEDB26D2CBDE60500FC19AD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AAEDB26E2CBDE60500FC19AD /* HP-TriviaTests */,
+			);
+			name = "HP-TriviaTests";
+			packageProductDependencies = (
+			);
+			productName = "HP-TriviaTests";
+			productReference = AAEDB26B2CBDE60500FC19AD /* HP-TriviaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AAEDB2742CBDE60500FC19AD /* HP-TriviaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAEDB2852CBDE60600FC19AD /* Build configuration list for PBXNativeTarget "HP-TriviaUITests" */;
+			buildPhases = (
+				AAEDB2712CBDE60500FC19AD /* Sources */,
+				AAEDB2722CBDE60500FC19AD /* Frameworks */,
+				AAEDB2732CBDE60500FC19AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAEDB2772CBDE60500FC19AD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AAEDB2782CBDE60500FC19AD /* HP-TriviaUITests */,
+			);
+			name = "HP-TriviaUITests";
+			packageProductDependencies = (
+			);
+			productName = "HP-TriviaUITests";
+			productReference = AAEDB2752CBDE60500FC19AD /* HP-TriviaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAEDB2532CBDE60400FC19AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					AAEDB25A2CBDE60400FC19AD = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					AAEDB26A2CBDE60500FC19AD = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = AAEDB25A2CBDE60400FC19AD;
+					};
+					AAEDB2742CBDE60500FC19AD = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = AAEDB25A2CBDE60400FC19AD;
+					};
+				};
+			};
+			buildConfigurationList = AAEDB2562CBDE60400FC19AD /* Build configuration list for PBXProject "HP-Trivia" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAEDB2522CBDE60400FC19AD;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AAEDB25C2CBDE60400FC19AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAEDB25A2CBDE60400FC19AD /* HP-Trivia */,
+				AAEDB26A2CBDE60500FC19AD /* HP-TriviaTests */,
+				AAEDB2742CBDE60500FC19AD /* HP-TriviaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAEDB2592CBDE60400FC19AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEDB2692CBDE60500FC19AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEDB2732CBDE60500FC19AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAEDB2572CBDE60400FC19AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEDB2672CBDE60500FC19AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEDB2712CBDE60500FC19AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAEDB26D2CBDE60500FC19AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAEDB25A2CBDE60400FC19AD /* HP-Trivia */;
+			targetProxy = AAEDB26C2CBDE60500FC19AD /* PBXContainerItemProxy */;
+		};
+		AAEDB2772CBDE60500FC19AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAEDB25A2CBDE60400FC19AD /* HP-Trivia */;
+			targetProxy = AAEDB2762CBDE60500FC19AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AAEDB27D2CBDE60600FC19AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAEDB27E2CBDE60600FC19AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAEDB2802CBDE60600FC19AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HP-Trivia/Preview Content\"";
+				DEVELOPMENT_TEAM = 9T3M3F8D2N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.james.volmert.HP-Trivia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAEDB2812CBDE60600FC19AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HP-Trivia/Preview Content\"";
+				DEVELOPMENT_TEAM = 9T3M3F8D2N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.james.volmert.HP-Trivia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AAEDB2832CBDE60600FC19AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9T3M3F8D2N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.james.volmert.HP-TriviaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HP-Trivia.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HP-Trivia";
+			};
+			name = Debug;
+		};
+		AAEDB2842CBDE60600FC19AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9T3M3F8D2N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.james.volmert.HP-TriviaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HP-Trivia.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HP-Trivia";
+			};
+			name = Release;
+		};
+		AAEDB2862CBDE60600FC19AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9T3M3F8D2N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.james.volmert.HP-TriviaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HP-Trivia";
+			};
+			name = Debug;
+		};
+		AAEDB2872CBDE60600FC19AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9T3M3F8D2N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.james.volmert.HP-TriviaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HP-Trivia";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAEDB2562CBDE60400FC19AD /* Build configuration list for PBXProject "HP-Trivia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAEDB27D2CBDE60600FC19AD /* Debug */,
+				AAEDB27E2CBDE60600FC19AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAEDB27F2CBDE60600FC19AD /* Build configuration list for PBXNativeTarget "HP-Trivia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAEDB2802CBDE60600FC19AD /* Debug */,
+				AAEDB2812CBDE60600FC19AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAEDB2822CBDE60600FC19AD /* Build configuration list for PBXNativeTarget "HP-TriviaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAEDB2832CBDE60600FC19AD /* Debug */,
+				AAEDB2842CBDE60600FC19AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAEDB2852CBDE60600FC19AD /* Build configuration list for PBXNativeTarget "HP-TriviaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAEDB2862CBDE60600FC19AD /* Debug */,
+				AAEDB2872CBDE60600FC19AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAEDB2532CBDE60400FC19AD /* Project object */;
+}

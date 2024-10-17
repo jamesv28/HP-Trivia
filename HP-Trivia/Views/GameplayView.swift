@@ -10,6 +10,9 @@ import SwiftUI
 struct GameplayView: View {
     @State private var animateViewIn: Bool = false
     @State private var tappedCorrectAnswer: Bool = false
+    @Environment(\.dismiss) private var dismiss
+    @State private var showHint: Bool = false
+    @State private var revealBook: Bool = false
     
     var body: some View {
         GeometryReader { geo in
@@ -22,7 +25,7 @@ struct GameplayView: View {
                     // MARK: Controls
                     HStack {
                         Button("End Game") {
-                            // TODO: End game
+                            dismiss()
                         }
                         .buttonStyle(.borderedProminent)
                         .tint(.red.opacity(0.5))
@@ -61,12 +64,29 @@ struct GameplayView: View {
                                     .padding()
                                     .padding(.leading, 20)
                                     .transition(.offset(x: -geo.size.width / 2))
+                                    .onTapGesture {
+                                        withAnimation(.easeOut(duration: 1)) {
+                                            showHint = true
+                                        }
+                                    }
+                                    .rotation3DEffect(.degrees(showHint ? 1440: 0), axis: (x: 0, y: 1, z: 0))
+                                    .scaleEffect(showHint ? 5: 1 )
+                                    .opacity(showHint ? 0: 1)
+                                    .offset(x: showHint ? geo.size.width / 2 : 0)
+                                    .overlay(
+                                        Text("The boy who..")
+                                            .padding(.leading, 33)
+                                            .minimumScaleFactor(0.6)
+                                            .multilineTextAlignment(.center)
+                                            .opacity(showHint ? 1: 0)
+                                            .scaleEffect(showHint ? 1.33 : 1)
+                                    )
                             }
                         }
                         .animation(.easeOut(duration: 1.5).delay(2), value: animateViewIn)
                        
-                        
                         Spacer()
+                        
                         VStack {
                             if animateViewIn {
                                 Image(systemName: "book.closed")
@@ -81,6 +101,23 @@ struct GameplayView: View {
                                     .padding()
                                     .padding(.trailing, 20)
                                     .transition(.offset(x: geo.size.width / 2))
+                                    .onTapGesture {
+                                        withAnimation(.easeOut(duration: 1)) {
+                                            revealBook = true
+                                        }
+                                    }
+                                    .rotation3DEffect(.degrees(revealBook ? 1440: 0), axis: (x: 0, y: 1, z: 0))
+                                    .scaleEffect(revealBook ? 5: 1 )
+                                    .opacity(revealBook ? 0: 1)
+                                    .offset(x: revealBook ? -geo.size.width / 2 : 0)
+                                    .overlay(
+                                        Image("hp1")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .padding(.trailing, 33)
+                                            .opacity(revealBook ? 1: 0)
+                                            .scaleEffect(revealBook ? 1.33 : 1)
+                                    )
                             }
                         }
                         .animation(.easeOut(duration: 1.5).delay(2), value: animateViewIn)

@@ -140,15 +140,19 @@ struct GameplayView: View {
                     .animation(.easeInOut(duration: 1).delay(1), value: tappedCorrectAnswer)
                     
                     Spacer()
-                    
-                    Text("Answer 1")
-                        .minimumScaleFactor(0.5)
-                        .multilineTextAlignment(.center)
-                        .padding(10)
-                        .frame(width: geo.size.width, height: 80)
-                        .background(.green.opacity(0.5))
-                        .cornerRadius(25)
-                        .scaleEffect(2)
+                    VStack {
+                        if tappedCorrectAnswer {
+                            Text("Answer 1")
+                                .minimumScaleFactor(0.5)
+                                .multilineTextAlignment(.center)
+                                .padding(10)
+                                .frame(width: geo.size.width, height: 80)
+                                .background(.green.opacity(0.5))
+                                .cornerRadius(25)
+                                .scaleEffect(2)
+                            
+                        }
+                    }
                     
                     Group {
                         Spacer()
@@ -180,8 +184,8 @@ struct GameplayView: View {
         }
         .ignoresSafeArea()
         .onAppear {
-//            animateViewIn = true
-            tappedCorrectAnswer = true
+            animateViewIn = true
+//            tappedCorrectAnswer = true
         }
     }
 }

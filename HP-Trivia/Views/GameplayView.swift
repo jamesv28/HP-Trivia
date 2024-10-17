@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct GameplayView: View {
+    @State private var animateViewIn: Bool = false
+    
     var body: some View {
         GeometryReader { geo in
             ZStack {
@@ -16,6 +18,7 @@ struct GameplayView: View {
                     .frame(width: geo.size.width * 3, height: geo.size.height * 1.05)
                     .overlay(Rectangle().foregroundColor(.black.opacity(0.8)))
                 VStack {
+                    // MARK: Controls
                     HStack {
                         Button("End Game") {
                             // TODO: End game
@@ -29,48 +32,79 @@ struct GameplayView: View {
                     .padding()
                     .padding(.vertical, 30)
                     
-                    Text("Who is Harry Potter?")
-                        .font(.custom(Constants.hpFont, size: 50))
-                        .multilineTextAlignment(.center)
-                        .padding()
+                    // MARK: Question
+                    VStack {
+                        if animateViewIn {
+                            Text("Who is Harry Potter?")
+                                .font(.custom(Constants.hpFont, size: 50))
+                                .multilineTextAlignment(.center)
+                                .padding()
+                                .transition(.scale)
+                        }
+                    }
+                    .animation(.easeInOut(duration: 2), value: animateViewIn)
+                    
                     
                     Spacer()
                     
+                    // MARK: Hints
                     HStack {
-                        Image(systemName: "questionmark.app.fill")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 100)
-                            .foregroundColor(.cyan)
-                            .rotationEffect(Angle(degrees: -15))
-                            .padding()
-                            .padding(.leading, 20)
+                        VStack {
+                            if animateViewIn {
+                                Image(systemName: "questionmark.app.fill")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 100)
+                                    .foregroundColor(.cyan)
+                                    .rotationEffect(Angle(degrees: -15))
+                                    .padding()
+                                    .padding(.leading, 20)
+                                    .transition(.offset(x: -geo.size.width / 2))
+                            }
+                        }
+                        .animation(.easeOut(duration: 1.5).delay(2), value: animateViewIn)
+                       
                         
                         Spacer()
+                        VStack {
+                            if animateViewIn {
+                                Image(systemName: "book.closed")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 50)
+                                    .foregroundColor(.black)
+                                    .frame(width: 100, height: 100)
+                                    .background(.cyan)
+                                    .cornerRadius(20)
+                                    .rotationEffect(.degrees(15))
+                                    .padding()
+                                    .padding(.trailing, 20)
+                                    .transition(.offset(x: geo.size.width / 2))
+                            }
+                        }
+                        .animation(.easeOut(duration: 1.5).delay(2), value: animateViewIn)
+
                         
-                        Image(systemName: "book.closed")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 50)
-                            .foregroundColor(.black)
-                            .frame(width: 100, height: 100)
-                            .background(.cyan)
-                            .cornerRadius(20)
-                            .rotationEffect(.degrees(15))
-                            .padding()
-                            .padding(.trailing, 20)
+                        
                     }
                     .padding(.bottom)
                     
+                    // MARK: Answers
                     LazyVGrid(columns: [GridItem(), GridItem()]) {
                         ForEach(0..<4) { i in
-                            Text("Answer \(i)")
-                                .minimumScaleFactor(0.5)
-                                .multilineTextAlignment(.center)
-                                .padding(10)
-                                .frame(width: geo.size.width / 2.5, height: 80)
-                                .background(.green.opacity(0.5))
-                                .cornerRadius(20)
+                            VStack {
+                                if animateViewIn {
+                                    Text("Answer \(i)")
+                                        .minimumScaleFactor(0.5)
+                                        .multilineTextAlignment(.center)
+                                        .padding(10)
+                                        .frame(width: geo.size.width / 2.5, height: 80)
+                                        .background(.green.opacity(0.5))
+                                        .cornerRadius(25)
+                                        .transition(.scale)
+                                }
+                            }
+                            .animation(.easeOut(duration: 1).delay(1.5), value: animateViewIn)
                             
                         }
                     }
@@ -83,9 +117,14 @@ struct GameplayView: View {
             .frame(width: geo.size.width, height: geo.size.height)
         }
         .ignoresSafeArea()
+        .onAppear {
+            animateViewIn = true
+        }
     }
 }
 
 #Preview {
-    GameplayView()
+    VStack {
+        GameplayView()
+    }
 }
